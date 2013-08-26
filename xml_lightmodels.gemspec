@@ -10,4 +10,5 @@ Gem::Specification.new do |s|
   s.homepage    = 'http://federico-tomassetti.it'
   s.files       = Dir['./lib/*.rb'] + Dir['./lib/xml_lightmodels/*.rb']
   s.add_dependency('lightmodels')
+  s.add_dependency('nokogiri')
 end
