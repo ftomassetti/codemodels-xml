@@ -1,4 +1,4 @@
-xml_lightmodels
-===============
+codemodels-xml
+==============
 
-Library to produce lightmodels from xml files.
+Plugin to add support for XML files in CodeModels.
