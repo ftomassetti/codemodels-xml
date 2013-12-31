@@ -1,12 +1,13 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'codemodels/xml/version'
 
 Gem::Specification.new do |s|
   s.platform    = 'java'
   s.name        = 'codemodels-xml'
-  s.version     = '0.1.1'
-  s.date        = '2013-09-07'
+  s.version     = CodeModels::Xml::VERSION
+  s.date        = '2013-12-31'
   s.summary     = "CodeModels plugin for XML files."
   s.description = "CodeModels plugin for XML files."
   s.authors     = ["Federico Tomassetti"]

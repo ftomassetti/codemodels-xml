@@ -1,7 +1,8 @@
 require 'json'
 require 'nokogiri'
 
-module XmlLightmodels
+module CodeModels
+module Xml
 
 # This should be generalized and moved to lightmodels
 def self.translate_dir(src,dest,src_extension,dest_extension,&translate_file)
@@ -67,4 +68,5 @@ def self.jsonize_doc(doc)
     map
 end
 
+end
 end
