@@ -9,14 +9,14 @@ end
 class Namespace < XmlAstNode
 end
 
-class Node < XmlAstNode
+class Element < XmlAstNode
 end
 
 class Document < XmlAstNode
     contains_many_uni 'namespaces', Namespace
     has_attr 'version', String
     has_attr 'encoding', String
-    contains_one 'root', Node, 'document'
+    contains_one 'root', Element, 'document'
 end
 
 end
