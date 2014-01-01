@@ -1,9 +1,17 @@
-require 'json'
 require 'nokogiri'
+require 'codemodels'
 
 module CodeModels
 module Xml
 
+class Parser < CodeModels::Parser
+
+    def internal_parse_artifact(artifact)
+    end
+
+end
+
+DefaultParser = Parser.new
 
 def self.jsonize_node(node)
     map = {}
