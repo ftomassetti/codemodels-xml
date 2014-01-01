@@ -9,7 +9,19 @@ end
 class Namespace < XmlAstNode
 end
 
+class Attribute < XmlAstNode
+    has_attr 'name', String
+    has_attr 'value', String
+end
+
+class Text < XmlAstNode
+end
+
 class Element < XmlAstNode
+    has_attr 'name', String
+    contains_many 'children', Element, 'parent'
+    contains_many_uni 'texts', Text
+    contains_many_uni 'attributes', Attribute
 end
 
 class Document < XmlAstNode
